@@ -35,3 +35,18 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+.idea
+*.sublime-project
+*.sublime-workspace
+*.swp
+solr_loading.js
+# Ignore Mac OS desktop services store
+.DS_Store
+.gitignore
+backup
+
+# Ignore Windows desktop setting file
+desktop.ini
+
+
