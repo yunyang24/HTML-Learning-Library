@@ -1,2 +1,9 @@
 # dev-demo
-pozoarts demo dev
+
+test!
+
+NodeJs + Express 
+
+Mysql + sequelize
+
+
