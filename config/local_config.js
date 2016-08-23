@@ -2,7 +2,7 @@
 /**
  * Created by Administrator on 2016/8/3 0003.
  */
-var secret = require('../secret');
+var secret = require('./secret');
 
 module.exports = {
     env: 'local',
@@ -13,16 +13,17 @@ module.exports = {
     port: 8088,
     logs_level: "INFO",
     path: {
-        views: 'views/dist',
+        views: 'views/build',
         routes: 'routes/web',
-        baseUrl: 'http://localhost:8088/public/src',
+        baseUrl: 'http://localhost:8088/public/build',
         gulp: {
-            build: 'src',
+            build: 'build',
             dist: 'dist'
         }
     },
     database: secret.database.local,
     redis: secret.redis.local,
+    des_3: secret.des_3,
     auth: secret.auth,
     solr: secret.solr.local
 };

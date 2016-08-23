@@ -1,10 +1,12 @@
 var config = require('../config_default').config;
+var logger = require("../common/log").logger("index");
 var redis = require("redis"),
     client = redis.createClient(config.redis.port, config.redis.host);
 
 client.on("error", function (err) {
-   console.log("redis error:" + err);
+   logger.error("redis error:" + err);
 });
 
 
-exports.client = client;
+exports.cache = client;
+

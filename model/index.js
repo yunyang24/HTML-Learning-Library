@@ -1,3 +1,10 @@
-/**
- * Created by Administrator on 2016/8/15 0015.
- */
+var huodong = require('./huodong');
+var monkey_year_wish = require('./monkey_year_wish');
+var sxn = require('./sxn');
+
+exports.models = {
+    huodong: huodong,
+    monkey_year_wish: monkey_year_wish,
+    sxn: sxn
+};
+

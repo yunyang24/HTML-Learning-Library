@@ -2,7 +2,7 @@
 /**
  * Created by Administrator on 2016/8/3 0003.
  */
-var secret = require('../secret');
+var secret = require('./secret');
 
 module.exports = {
     env: 'prod',
@@ -14,15 +14,16 @@ module.exports = {
     logs_level: "ERROR",
     path: {
         views: 'views/dist',
-        routes: 'routes/web',
+        routes: 'routes',
         baseUrl: 'http://test.cmstheme.com',
         gulp: {
-            build: 'src',
+            build: 'build',
             dist: 'dist'
         }
     },
     database: secret.database.production,
     redis: secret.redis.production,
+    des_3: secret.des_3,
     auth: secret.auth,
     solr: secret.solr.production
 };

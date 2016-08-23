@@ -105,6 +105,12 @@ module.exports = {
         auth_token_secret: "pozoarts",//加密session的字符串
         auth_token_name: "_pozoarts"//前端cookie名称(保存登录信息)
     },
+    des_3: {//des加密配置
+        algorithm: "des-ede3",
+        key: "QWERTY#$%ZXCa!!!pozoarts",
+        iv: null,
+        autoPad: true
+    },
     admin_account: [//简易的后台系统登录权限(固定账户密码)
         {
             user: 'admin',
