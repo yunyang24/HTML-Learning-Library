@@ -31,9 +31,9 @@ if (config.path.baseUrl) {
 }
 app.locals.homepage = config.homepage || '';
 
-app.use(express.static(path.join(__dirname, 'public')));
-/*app.use("/public", express.static(path.join(__dirname, 'public')));*/
-
+/*app.use(express.static(path.join(__dirname, 'public')));*/
+app.use("/public", express.static(path.join(__dirname, 'public')));    //希望所有通过 express.static 访问的文件都存放在一个“虚拟（virtual）”目录（即目录根本不存在）下面，
+                                                                       //可以通过为静态资源目录指定一个挂载路径的方式来实现
 //app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 //app.use(express.static(path.join(__dirname, 'public')));
 //app.use(express.compress());
