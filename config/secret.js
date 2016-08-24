@@ -12,9 +12,9 @@ module.exports = {
             }
         },
         development: {
-            db: '',
-            user: '',
-            password: '',
+            db: 'devpozoarts',
+            user: 'root',
+            password: 'BJnj!@#2016',
             host: 'localhost',
             pool: {
                 max: 100,
@@ -23,9 +23,9 @@ module.exports = {
             }
         },
         production: {
-            db: '',
-            user: '',
-            password: '',
+            db: 'devpozoarts',
+            user: 'feiyang',
+            password: 'BJnj!@#2016',
             host: '',
             pool: {
                 max: 100,
@@ -102,12 +102,12 @@ module.exports = {
         }
     },
     auth: {
-        auth_token_secret: "",//加密session的字符串
-        auth_token_name: ""//前端cookie名称(保存登录信息)
+        auth_token_secret: "pozoarts",//加密session的字符串
+        auth_token_name: "_pozoarts"//前端cookie名称(保存登录信息)
     },
     des_3: {//des加密配置
-        algorithm: "",
-        key: "",
+        algorithm: "des-ede3",
+        key: "QWERTY#$%ZXCa!!!pozoarts",
         iv: null,
         autoPad: true
     },
