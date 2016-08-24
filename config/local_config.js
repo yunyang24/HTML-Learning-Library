@@ -7,15 +7,15 @@ var secret = require('./secret');
 module.exports = {
     env: 'local',
     name: 'user_web',
-    host: "localhost:8088",
+    host: "localhost:8082",
     domain: 'localhost',
     debug: true,
-    port: 8088,
+    port: 8082,
     logs_level: "INFO",
     path: {
         views: 'views/build',
         routes: 'routes/web',
-        baseUrl: 'http://localhost:8088/public/build',
+        baseUrl: 'http://localhost:8082/public/build',
         gulp: {
             build: 'build',
             dist: 'dist'

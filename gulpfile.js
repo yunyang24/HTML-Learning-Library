@@ -21,13 +21,13 @@ var gulp = require('gulp'),
 
 //Less解析
 gulp.task('build-less', function () {
-    gulp.src('public/' + src + '/less/page/**')
+    gulp.src('public/' + src + '/less/**')
         .pipe(less())
         .pipe(replace('_baseUrl_', config.path.baseUrl))
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
         .pipe(minifycss())
-        .pipe(gulp.dest('public/' + src + '/css/page'))
-        .pipe(gulp.dest('public/' + dist + '/css/page'));
+        .pipe(gulp.dest('public/' + src + '/css'))
+        .pipe(gulp.dest('public/' + dist + '/css'));
 });
 
 // 脚本

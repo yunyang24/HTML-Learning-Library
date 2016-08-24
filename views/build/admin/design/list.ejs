@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>首页 - 设计师列表</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <% include ../../common/head.ejs%>
+</head>
+<body>
+<% include ../../common/adminNav.ejs%>
+<div class="container panel-content mt72 mb20">
+<div class="row">
+    <div class="col-md-3 col-xs-4">
+        <div class="sidebar" id="sidebar">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="javascript:;">资讯管理</a>
+                    <ul>
+                        <li><a href="#">资讯列表</a></li>
+                        <li><a href="#">添加资讯</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;">设计师管理</a>
+                    <ul>
+                        <li><a href="#" class="curr">设计师列表</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;">作品管理</a>
+                    <ul>
+                        <li><a href="#">作品列表</a></li>
+                        <li><a href="#">添加类别</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;">文章管理</a>
+                    <ul>
+                        <li><a href="#">文章列表</a></li>
+                        <li><a href="#">添加类别</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;">广告管理</a>
+                    <ul>
+                        <li><a href="#">广告列表</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;">用户反馈</a>
+                    <ul>
+                        <li><a href="#">反馈列表</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-9 col-xs-8">
+        <ul id="myTabs" class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">全部</a></li>
+            <li role="presentation" class=""><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">Profile</a></li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
+                <table class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>设计师</th>
+                    <th>作品数</th>
+                    <th>文章数</th>
+                    <th>设计师封面</th>
+                    <th>加入时间</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><a href="#" target="_blank">世界真大</a></td>
+                    <td><a href="#">123</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><div class="thumb" style="background-image: url('<%=baseUrl%>/img/ad.jpg')"></div></td>
+                    <td>2016-11-23</td>
+                    <td><p><span class="blacklist">加入黑名单</span></p><p><span class="weike">允许成为威客</span></p></td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><a href="#" target="_blank">世界真大</a></td>
+                    <td><a href="#">123</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><div class="thumb" style="background-image: url('<%=baseUrl%>/img/ad.jpg')"></div></td>
+                    <td>2016-11-23</td>
+                    <td><p><span class="blacklist">加入黑名单</span></p><p><span class="weike">允许成为威客</span></p></td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><a href="#" target="_blank">世界真大</a></td>
+                    <td><a href="#">123</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><div class="thumb" style="background-image: url('<%=baseUrl%>/img/ad.jpg')"></div></td>
+                    <td>2016-11-23</td>
+                    <td><p><span class="blacklist">加入黑名单</span></p><p><span class="weike">允许成为威客</span></p></td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><a href="#" target="_blank">世界真大</a></td>
+                    <td><a href="#">123</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><div class="thumb" style="background-image: url('<%=baseUrl%>/img/ad.jpg')"></div></td>
+                    <td>2016-11-23</td>
+                    <td><p><span class="blacklist">加入黑名单</span></p><p><span class="weike">允许成为威客</span></p></td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><a href="#" target="_blank">世界真大</a></td>
+                    <td><a href="#">123</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><div class="thumb" style="background-image: url('<%=baseUrl%>/img/ad.jpg')"></div></td>
+                    <td>2016-11-23</td>
+                    <td><p><span class="blacklist">加入黑名单</span></p><p><span class="weike">允许成为威客</span></p></td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><a href="#" target="_blank">世界真大</a></td>
+                    <td><a href="#">123</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><div class="thumb" style="background-image: url('<%=baseUrl%>/img/ad.jpg')"></div></td>
+                    <td>2016-11-23</td>
+                    <td><p><span class="blacklist">加入黑名单</span></p><p><span class="weike">允许成为威客</span></p></td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><a href="#" target="_blank">世界真大</a></td>
+                    <td><a href="#">123</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><div class="thumb" style="background-image: url('<%=baseUrl%>/img/ad.jpg')"></div></td>
+                    <td>2016-11-23</td>
+                    <td><p><span class="blacklist">加入黑名单</span></p><p><span class="weike">允许成为威客</span></p></td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><a href="#" target="_blank">世界真大</a></td>
+                    <td><a href="#">123</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><div class="thumb" style="background-image: url('<%=baseUrl%>/img/ad.jpg')"></div></td>
+                    <td>2016-11-23</td>
+                    <td><p><span class="blacklist">加入黑名单</span></p><p><span class="weike">允许成为威客</span></p></td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><a href="#" target="_blank">世界真大</a></td>
+                    <td><a href="#">123</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><div class="thumb" style="background-image: url('<%=baseUrl%>/img/ad.jpg')"></div></td>
+                    <td>2016-11-23</td>
+                    <td><p><span class="blacklist">加入黑名单</span></p><p><span class="weike">允许成为威客</span></p></td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><a href="#" target="_blank">世界真大</a></td>
+                    <td><a href="#">123</a></td>
+                    <td><a href="#">19</a></td>
+                    <td><div class="thumb" style="background-image: url('<%=baseUrl%>/img/ad.jpg')"></div></td>
+                    <td>2016-11-23</td>
+                    <td><p><span class="blacklist">加入黑名单</span></p><p><span class="weike">允许成为威客</span></p></td>
+                </tr>
+                </tbody>
+            </table>
+                <div class="text-center">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<% include ../../common/footer.ejs%>
+<script src="<%=baseUrl%>/js/bootstrap.min.js"></script>
+<script src="<%=baseUrl%>/js/custom.js"></script>
+</body>
+</html>

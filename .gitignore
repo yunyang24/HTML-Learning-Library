@@ -3,6 +3,9 @@ logs
 *.log
 npm-debug.log*
 
+#忽略的配置文件
+.gitignore
+
 # Runtime data
 pids
 *.pid
@@ -43,10 +46,23 @@ jspm_packages
 solr_loading.js
 # Ignore Mac OS desktop services store
 .DS_Store
-.gitignore
 backup
+
+#gulp生成静态文件资源
+public/temporary
+public/dist
+#gulp生成动态模板资源
+views/dist
+views/temporary
+
+public/build/css
 
 # Ignore Windows desktop setting file
 desktop.ini
 
 
+#配置文件初始入口,测试网,线上环境需手动加入此文件,不然会报错
+config_default.js
+
+#包括数据库,加密设置等机密配置信息,测试网,线上环境需要手动加入此文件,不然会报错
+config/secret.js
