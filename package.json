@@ -58,7 +58,6 @@
     "sha1": "^1.1.1",
     "solr-client": "^0.6.0",
     "util": "^0.10.3",
-    "wkhtmltopdf": "^0.3.3",
     "xss": "^0.2.13"
   },
   "devDependencies": {
