@@ -6,9 +6,8 @@ exports.sequelize = new Sequelize(config.database.db, config.database.user, conf
     pool: config.database.pool,
     define: {
         engine: 'InnoDB',
-        timestamp: false,
-        createdAt: false,
-        updatedAt: false,
+        timestamps: true,
+        underscored: true,
         charset: 'utf8mb4'
     }
 });
