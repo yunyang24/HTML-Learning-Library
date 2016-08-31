@@ -4,7 +4,7 @@
 var Sequelize = require('./connect').Sequelize;
 var sequelize = require('./connect').sequelize;
 
-module.exports = sequelize.define('article', {
+module.exports = sequelize.define('work', {
     id: {
         type:Sequelize.BIGINT(16),
         primaryKey: true,
@@ -19,7 +19,7 @@ module.exports = sequelize.define('article', {
     type: {
         type:Sequelize.STRING(16),
         allowNull: true,
-        defaultValue: 0
+        defaultValue: '默认'
     },
     type_id:{
         type:SequelizeINTEGER(4),
@@ -32,6 +32,26 @@ module.exports = sequelize.define('article', {
         defaultValue: '',
         comment: '申请理由'
     },
+    thumb: {
+        type: Sequelize.STRING(64), // 指定值的类型
+        allowNull: false,
+        defaultValue: ''
+    },
+    img1: {
+        type: Sequelize.STRING(64), // 指定值的类型
+        allowNull: false,
+        defaultValue: ''
+    },
+    img2: {
+        type: Sequelize.STRING(64), // 指定值的类型
+        allowNull: false,
+        defaultValue: ''
+    },
+    img3: {
+        type: Sequelize.STRING(64), // 指定值的类型
+        allowNull: false,
+        defaultValue: ''
+    },
     content:{
         type:Sequelize.TEXT,
         comment: '申请内容'
@@ -40,9 +60,9 @@ module.exports = sequelize.define('article', {
         type:Sequelize.BIGINT(16),
         allowNull: false,
         defaultValue: '',
-        comment: '发布文章作者'
+        comment: '发布作品作者'
     }
-}, {
+},{
     freezeTableName: true,
     indexes: [
         {
