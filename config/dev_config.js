@@ -10,7 +10,7 @@ module.exports = {
     host: "www.dev.cmstheme.com",
     domain: '.dev.cmstheme.com',
     debug: true,
-    port: 8088,
+    port: 8082,
     logs_level: "INFO",
     path: {
         views: 'views/dist',
