@@ -14,8 +14,8 @@ module.exports = {
     logs_level: "INFO",
     path: {
         views: 'views/dist',
-        routes: 'routes',
-        baseUrl: 'http://test.dev.cmstheme.com',
+        routes: 'routes/web',
+        baseUrl: 'http://test1.dev.cmstheme.com',
         gulp: {
             build: 'build',
             dist: 'dist'
