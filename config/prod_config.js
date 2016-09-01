@@ -14,8 +14,8 @@ module.exports = {
     logs_level: "ERROR",
     path: {
         views: 'views/dist',
-        routes: 'routes',
-        baseUrl: 'http://test.cmstheme.com',
+        routes: 'routes/web',
+        baseUrl: 'http://test1.cmstheme.com',
         gulp: {
             build: 'build',
             dist: 'dist'
